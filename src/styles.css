@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+.sessao-titulo{
+    color: #585858;
+    font-weight: 700;
+}
+
+.sessao-paragrafo{
+    text-align: justify;
+    color: #606060;
+}
