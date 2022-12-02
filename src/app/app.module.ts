@@ -6,6 +6,7 @@ import { TopoComponent } from '../componentes/topo/topo.component';
 import { RodapeComponent } from '../componentes/rodape/rodape.component';
 
 import { PadrinhoNotaDezComponent } from '../componentes/padrinho-nota-dez/padrinho-nota-dez.component';
+import { BazarComponent } from '../componentes/bazar/bazar.component';
 import { DoacaoComponent } from '../componentes/doacao/doacao.component';
 
 @NgModule({
@@ -13,8 +14,9 @@ import { DoacaoComponent } from '../componentes/doacao/doacao.component';
     AppComponent,
     TopoComponent,
     RodapeComponent,
+    PadrinhoNotaDezComponent,
+    BazarComponent,
     DoacaoComponent,
-    PadrinhoNotaDezComponent
   ],
   imports: [
     BrowserModule
