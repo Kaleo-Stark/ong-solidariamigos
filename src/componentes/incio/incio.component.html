@@ -1,0 +1,47 @@
+<div class="row">
+    <div class="col-sm-0 col-md-1 col-lg-4"></div>
+
+    <div class="col-sm-12 col-md-10 col-lg-4">
+        <img src="../../assets/inicio/logo.png" alt="Ilustração representando pessoa precisando de ajuda." width="100%" style="margin: 20px 0px 20px 0px">
+    </div>
+
+    <div class="col-sm-0 col-md-1 col-lg-4"></div>
+</div>
+
+<div class="row">
+    <div class="col">
+        <p class="sessao-paragrafo">
+            Somos uma organização não governamental sem fins lucrativos, fundada em 25 de novembro de 2007.
+            Fazemos um trabalho humanizado, voltado para famílias carentes, pessoas em situação de rua, e também
+            ajudamos pessoas que precisam de resgate humanitário por sofrer violência doméstica ou sexual.
+        </p>
+    </div>
+</div>
+
+<div id="carouselInicio" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselInicio" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselInicio" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselInicio" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+
+    <div class="carousel-inner">
+        <div *ngFor="let foto of imagensCarousel" class="carousel-item {{ foto.ativo ? 'active' : '' }}">
+            <img src="{{ foto.src }}" class="d-block w-100" alt="Foto sobre padrinho nota 10">
+            <!--<div class="carousel-caption d-md-block">
+                <h5>{{ foto.titulo }}</h5>
+                <p>{{ foto.sobre }}</p>
+            </div>-->
+        </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselInicio" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselInicio" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
