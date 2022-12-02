@@ -1,7 +1,9 @@
-<h1 class="sessao-titulo">Doação</h1>
+<h1 class="sessao-titulo">Doações</h1>
 
 <p class="sessao-paragrafo">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt animi error deleniti ut impedit modi sequi. Architecto harum atque corrupti quaerat deleniti rerum beatae, eveniet dolorem sunt deserunt praesentium placeat.
+    Nosso setor de doações trabalha com arrecadações para o bazar e também com comidas que possam ser levadas a moradores de rua.
+    Aceitamos doações de roupas, sapatos e itens variados para a revenda no nosso bazar,  também fazermos trocas para suprir a 
+    necessidade que nos encontramos no momento.
 </p>
 
 <div id="carouselDoacao" class="carousel slide" data-bs-ride="carousel">
@@ -14,10 +16,10 @@
     <div class="carousel-inner">
         <div *ngFor="let foto of imagensCarousel" class="carousel-item {{ foto.ativo ? 'active' : '' }}">
             <img src="{{ foto.src }}" class="d-block w-100" alt="Foto sobre padrinho nota 10">
-            <div class="carousel-caption d-md-block">
+            <!--<div class="carousel-caption d-md-block">
                 <h5>{{ foto.titulo }}</h5>
                 <p>{{ foto.sobre }}</p>
-            </div>
+            </div>-->
         </div>
     </div>
 
